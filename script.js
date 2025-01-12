@@ -89,4 +89,18 @@ function playGame() {
         console.log("%cIt's a tie!", "font-weight: 800; font-size: 28px; background-color: Yellow; color: black")
     }
 
+    playAgain()
+
+}
+
+function playAgain () {
+    let ask = prompt("Play again?").toLowerCase();
+
+    if(ask === "yes" || ask ==="y") {
+        userScore = 0;
+        compScore = 0;
+        playGame()
+    } else {
+
+    }
 }
